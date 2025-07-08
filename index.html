@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ayman Dhanshe | Frontend Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      overflow-x: hidden;
+    }
+    header {
+      background: #1e293b;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      color: #38bdf8;
+      font-size: 28px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #94a3b8;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #f8fafc;
+    }
+    section {
+      padding: 100px 60px;
+      min-height: 100vh;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      animation: fadeIn 2s ease;
+    }
+    .hero h2 {
+      font-size: 48px;
+      color: #38bdf8;
+    }
+    .hero p {
+      margin-top: 20px;
+      font-size: 20px;
+      color: #cbd5e1;
+      max-width: 700px;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 36px;
+      color: #38bdf8;
+      margin-bottom: 40px;
+    }
+    .card {
+      background: #1e293b;
+      margin: 20px auto;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+      max-width: 900px;
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-10px); }
+    .card h4 {
+      font-size: 24px;
+      color: #facc15;
+    }
+    .card p {
+      margin-top: 10px;
+      color: #cbd5e1;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .skills-list li {
+      list-style: none;
+      background: #334155;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-size: 16px;
+      color: #f1f5f9;
+    }
+    .social-icons {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .social-icons a {
+      margin: 0 15px;
+      color: #38bdf8;
+      font-size: 28px;
+      transition: transform 0.3s;
+    }
+    .social-icons a:hover {
+      transform: scale(1.2);
+      color: #f8fafc;
+    }
+    footer {
+      text-align: center;
+      background: #0f172a;
+      padding: 25px;
+      font-size: 14px;
+      color: #64748b;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ayman Dhanshe</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Crafting Interfaces, Building Impact</h2>
+    <p>As a frontend developer, I turn imagination into interaction—designing fast, intuitive, real-world web solutions using React, Tailwind CSS, and modern JavaScript.</p>
+  </section>
+
+  <section id="about">
+    <h3 class="section-title">About Me</h3>
+    <p style="max-width: 800px; margin: 0 auto; text-align: center;">
+      I’m a 2025 B.Tech IT student from DBATU, passionate about UI/UX and interactive design. I bridge design with functionality and ensure every project is user-first. I’ve interned with Afame Technologies and built real-world systems such as Smart Waste Management using Raspberry Pi and AI.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h3 class="section-title">Projects</h3>
+    <div class="card">
+      <h4>Smart Waste Management (IEEE Paper)</h4>
+      <p>Built an AI-based system using Raspberry Pi, OLED, Servo, and ML model to classify waste (paper, plastic, metal, etc.) using camera and sort it into bins. YOLO and TFLite used for object detection.</p>
+    </div>
+    <div class="card">
+      <h4>Interactive Portfolio Website</h4>
+      <p>Designed a fast and mobile-friendly personal portfolio using React and Tailwind. Features animated sections, smooth scroll, resume download, and GitHub/LinkedIn links.</p>
+    </div>
+    <div class="card">
+      <h4>E-Commerce Product Gallery</h4>
+      <p>Created a React-based product viewer with sorting, filtering, and responsive grid. Styled using Tailwind and integrated dummy API for dynamic content.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h3 class="section-title">Tech Stack</h3>
+    <ul class="skills-list">
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>React.js</li>
+      <li>Tailwind CSS</li>
+      <li>Bootstrap</li>
+      <li>REST APIs</li>
+      <li>Git & GitHub</li>
+      <li>Figma</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h3 class="section-title">Let's Connect</h3>
+    <p style="text-align:center;">📧 aymandhanshe805@gmail.com | 📞 +91-9022421672 | 📍 Mahad, Maharashtra, India</p>
+    <div class="social-icons">
+      <a href="https://github.com/aymandhanshe" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/ayman-dhanshe" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ayman Dhanshe — Passionate Developer. Lifelong Learner.</p>
+  </footer>
+</body>
+</html>
